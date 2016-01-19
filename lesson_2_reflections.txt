@@ -5,3 +5,23 @@ You need to tell git to start tracking all the changes in the directory.
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area allows you to bundle different files for each commit in a logical manner. This allows for better organization and logical sequencing for commits and tracking changes.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+You can add files that are related for each commit with the "git add" for each file then "git commit" to commit these changes. Do this until "git status" says there are no more changes in the working directory.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+It would allow you to experiment with features without affecting the main code. Also allows for a "stable" and "experimental" type workspace.
+
+How do the diagrams help you visualize the branch structure?
+
+It allows you to see how the branches flow between different commits and where they branch off
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches will add all the changes from one branch to another as long as there are no conflicts.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Pros is likely that it saves time and automatically finds conflicts. But it's less control than merging manually. Merging automatically can potentially cause bugs or other issues.
